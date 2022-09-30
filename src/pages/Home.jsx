@@ -33,7 +33,7 @@ const Home = () => {
             <div className="w-[100%] lg:w-[50%] sm:ml-[3rem] 2xl:ml-[5rem] px-8">
               <p className="text-[#FFCE00]">Our Road to 1 Billion Nears!</p>
               <h1 className="text-white text-[40px] font-semibold">
-                Our games have 750 million+ installs! That's a lot, but we're
+                Your games have 750 million+ installs! That's a lot, but we're
                 far from done.
               </h1>
             </div>
