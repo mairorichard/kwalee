@@ -17,6 +17,8 @@ import Game3 from "../assets/game3.png";
 import Game4 from "../assets/game4.png";
 import Google from "../assets/google_play.png";
 import Apple from "../assets/apple.png";
+import Land from "../assets/landing.png";
+import Publish from "../assets/publishbg.png";
 
 const Home = () => {
   return (
@@ -24,16 +26,14 @@ const Home = () => {
       <Navbar />
 
       {/* landing section */}
-
-      <section className="overflow-hidden">
-        <div className="">
-          <div
-            className={`${styles.splash} flex-col flex lg:flex-row h-[100%] items-center justify-between py-12 gap-12 w-full`}
-          >
+      {/* <img src={Land} alt="" className="absolute z-0" /> */}
+      <section className="overflow-hidden z-10 splash ">
+        <div className="overflow-hidden">
+          <div className="flex-col flex lg:flex-row h-[100%] items-center justify-between py-12 gap-12 w-full z-10">
             <div className="w-[100%] lg:w-[50%] sm:ml-[3rem] 2xl:ml-[5rem] px-8">
               <p className="text-[#FFCE00]">Our Road to 1 Billion Nears!</p>
               <h1 className="text-white text-[40px] font-semibold">
-                Your games have 750 million+ installs! That's a lot, but we're
+                Our games have 750 million+ installs! That's a lot, but we're
                 far from done.
               </h1>
             </div>
@@ -47,11 +47,10 @@ const Home = () => {
               <img src={Img6} alt="splash image" className="h-[200px]" />
             </div>
           </div>
-
           {/* Particles */}
           <div className="">
             {/* line 1 */}
-            <div className="absolute top-[150px] left-[-8px] hidden lg:block ">
+            {/* <div className="absolute top-[150px] left-[-8px] hidden lg:block ">
               <svg
                 width="556"
                 height="544"
@@ -69,10 +68,10 @@ const Home = () => {
                   stroke-width="2"
                 />
               </svg>
-            </div>
+            </div> */}
 
             {/* line 2 */}
-            <div className="absolute top-0 hidden lg:block">
+            {/* <div className="absolute top-0 hidden lg:block">
               <svg
                 width="767"
                 height="709"
@@ -90,7 +89,7 @@ const Home = () => {
                   stroke-width="2"
                 />
               </svg>
-            </div>
+            </div> */}
 
             {/* game pad */}
             <div className="absolute top-[30rem] left-36">
@@ -157,22 +156,6 @@ const Home = () => {
             </div>
 
             {/* triangle 2 */}
-            <div className="absolute top-24 right-60 z-0">
-              <svg
-                width="66"
-                height="76"
-                viewBox="0 0 66 76"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  opacity="0.5"
-                  d="M3.63646 38.0926L64.4244 3.08437L64.3484 73.2324L3.63646 38.0926Z"
-                  stroke="#FFCE00"
-                  stroke-width="3"
-                />
-              </svg>
-            </div>
 
             {/* star */}
             <div className="absolute -bottom-10 right-[26rem]">
@@ -197,7 +180,7 @@ const Home = () => {
 
       {/* first card section */}
 
-      <section className="py-14 lg:py-20 flex justify-center items-center  relative">
+      <section className="py-14 lg:py-20 flex justify-center items-center  ">
         <div className="lg:flex justify-between gap-10 items-center mx-10 md:mx-24">
           <div className="w-[100%] md:w-[70%]">
             <p className="text-[#FFCE00]">Welcome to KWALEE</p>
@@ -253,7 +236,7 @@ const Home = () => {
         {/* particles */}
         <div className="">
           {/* circles */}
-          <div className="absolute top-60 left-4">
+          <div className="absolute top-[50rem] left-4">
             <svg
               width="62"
               height="62"
@@ -338,7 +321,7 @@ const Home = () => {
       {/* publish section */}
 
       <section
-        className={`${styles.publish} h-full py-20 px-5 text-white flex flex-col items-center justify-center`}
+        className={`publish h-full py-20 px-5 text-white flex flex-col items-center justify-center`}
       >
         <h1 className="text-[26px] xl:text-[30px]">WE PUBLISH GREAT GAMES</h1>
         <div className="flex justify-center items-center gap-8 mt-6">

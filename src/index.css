@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.publish {
+  background-image: url("/src/assets/publishbg.png");
+}
+.splash {
+  background-image: url("/src/assets/landing.png");
+}
