@@ -27,7 +27,7 @@ const Home = () => {
 
       {/* landing section */}
       {/* <img src={Land} alt="" className="absolute z-0" /> */}
-      <section className="overflow-hidden z-10 splash ">
+      <section className="overflow-hidden z-10 splash">
         <div className="overflow-hidden">
           <div className="flex-col flex lg:flex-row h-[100%] items-center justify-between py-12 gap-12 w-full z-10">
             <div className="w-[100%] lg:w-[50%] sm:ml-[3rem] 2xl:ml-[5rem] px-8">
@@ -459,7 +459,7 @@ const Home = () => {
                     <img src={Google} alt="google play icon" />
                   </div>
                   <div className="bg-[#C4C4C4] w-[41px] h-[32px] rounded-2xl p-2 flex items-center justify-center">
-                    <img src={Apple} alt="google play icon" />
+                    <img src={Apple} alt="googleplay icon" />
                   </div>
                 </div>
               </div>

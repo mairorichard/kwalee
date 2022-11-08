@@ -19,7 +19,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="flex items-center">
-          <button className="md:inline-block px-6 py-3 text-sm font-medium text-white bg-black border border-black rounded active:text-black hover:bg-transparent hover:text-black focus:outline-none focus:ring hidden">
+          <button className="md:inline-block px-6 py-3 text-sm font-medium text-white bg-black border border-black rounded active:text-black hover:bg-transparent hover:text-black focus:outline-none focus:ring hidden animate-pulse">
             Publish with us
           </button>
           <Icon
@@ -29,9 +29,11 @@ const Navbar = () => {
           />
         </div>
       </div>
+
       <div
-        style={{ display: isOpen ? "" : "none" }}
-        className="w-[100%] md:w-[50%] h-[100vh] bg-[#FFCB05] absolute top-0 right-0 text-black px-5 sm:px-10 py-8 flex flex-col justify-between"
+        className={`h-[100vh]  bg-[#FFCB05] ${
+          isOpen ? "w-[0px]" : "w-full md:w-[50%] py-5 px-4 md:py-8 md:px-8"
+        } absolute top-0 right-0 text-black  flex flex-col justify-between transition-all ease-in-out delay-100 overflow-hidden`}
       >
         <div className=" flex justify-between items-center">
           <h1 className="text-[35px] font-semibold w-[50%] sm:w-full">
